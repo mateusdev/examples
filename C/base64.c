@@ -1,3 +1,7 @@
+/**
+ * Just a simple implementation of a base64 encoder/decoder :)
+**/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -150,5 +154,6 @@ int main(void){
 
 	char *de = b64dec_ascii(en);
 	printf("%s\n", de);
-
+	b64_free(en);
+	b64_free(de);
 }
